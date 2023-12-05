@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "../css/Home.css";
 
 function Home(){
+    const [showPassword, setShowPassword] = useState(false);
+
+    const togglePasswordVisibility = () => {
+        setShowPassword((prevShowPassword) => !prevShowPassword);
+    };
+
     return (
         <div>
             <div className="header">
@@ -16,8 +23,20 @@ function Home(){
                 </div>
 
                 <div className="login-register">
-                        <input type="email" alt="Email" placeholder="Enter Email Addess"/>
-                        <input type="password" alt="Password" placeholder="Enter Password"/>
+
+                    <input type="email" alt="Email" placeholder="Enter Email" />
+                    <input
+                        type={showPassword ? "text" : "password"}
+                        alt="Password"
+                        placeholder="Enter Password"
+                    />
+                    <input
+                        type="checkbox"
+                        id="showPasswordCheckbox"
+                        checked={showPassword}
+                        onChange={togglePasswordVisibility}
+                    />
+                    <label className="showPasswordCheckbox">Show Password</label>
                         <button type="submit" className="btn-login" name="Login">Login</button>
                         <button type="submit" className="btn-register" name="Register">Register</button>
                 </div>

@@ -5,7 +5,7 @@
     padding: 20px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -40px;
     width: 100%;
     background-color: white;
     z-index: 1000;
@@ -23,7 +23,7 @@
 }
 
 .links {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
 }
@@ -39,14 +39,14 @@
 }
 
 .login-register {
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .login-register input {
-    margin-right: 5px;
+    margin-right: 10px;
     padding: 8px;
 }
 
@@ -80,6 +80,11 @@
     border: 2px solid green;
     color: white;
     transition: background-color 0.3s, color 0.3s;
+}
+
+.showPasswordCheckbox {
+    font-size: 12px;
+    margin-left: -20px;
 }
 
 /* Footer */
