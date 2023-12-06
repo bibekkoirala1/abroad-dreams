@@ -10,7 +10,7 @@ return(
   <div className="header">
 
     <div className="left-section">
-      <img className="dream-logo" src="src\assets\logo\ad-logo-dashboard.svg"/>
+      <img className="dream-logo" src="src\assets\logo\ad-square-logo.svg"/>
       <div className="dashboard-button-container">
         <button className="dashboard-button" >Users</button>
         <button className="dashboard-button" >Institutions</button>
