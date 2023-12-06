@@ -1,52 +1,155 @@
-.container {
-  height: 100vh;
-  width: 100vw;
-  background: green;
+body {
+  margin: 0;
+  height: 5000px;
+}
+
+.header {
+  height: 90px;
+  color: blue;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #ccc; /* Top border with a light gray color */
+  border-bottom: 2px solid #ccc; /* Bottom border with a light gray color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+}
+
+.header .left-section {
+  background-color: rgb(110, 114, 114);
+  width: 270px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 2000px;
+}
+
+.header .middle-section {
+  
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 300px;
+}
+
+.header .right-section {
+  width: 350px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  padding: 30px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
 }
 
-.container .dashboard-header {
-  background: pink;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
+
+
+.ham-logo {
+  height: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.container .dashboard-main {
-  background: white;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  top: 130px; /* Adjusted top position to avoid overlapping with header */
-  bottom: 40px; /* Adjusted bottom position to provide spacing for footer */
-  overflow-y: auto; /* Added overflow-y to enable scrolling if content overflows */
-  margin-bottom: 30px;
+.dream-logo {
+  height: 150px;
+  min-height: 100px;
+  margin-left: 40px;
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
+.dream-logo:hover {
+  transform: scale(1.2); /* Scale up on hover (you can adjust the scale factor) */
+  /* Add additional hover effects or animations as needed */
+}
+
+
+.header .right-section .notification-logo,
+.header .right-section .profile-image {
+  height: 28px;
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
+.header .right-section .notification-logo {
+  width: 40px;
+  margin-left: 120px;
+  margin-right: 20px;
+}
+
+.header .right-section .profile-image {
+  width: 28px;
+  right: -200px;
+  border-radius: 50%;
+  align-content: space-between;
+}
+
+.notification-logo:hover,
+.profile-image:hover {
+  transform: scale(1.2); /* Scale up on hover (you can adjust the scale factor) */
+  /* Add additional hover effects or animations as needed */
+}
+
+.admin-info {
   display: flex;
+  font-size: 10px;
   align-items: center;
-  text-align: center;
-  text-decoration: none;
-
+  margin-left: 10px;
+  color: grey;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-.container .dashboard-footer {
-  background: red;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 0;
+.admin-info:hover {
+  color: #007bff; /* Change color on hover to blue (#007bff) or your preferred color */
+  animation: bounce 0.3s ease; /* Example animation: bounce on hover */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+
+.search-bar-section {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-image: url('path/to/your-logo.png'); /* Replace 'path/to/your-logo.png' with the actual path to your logo */
+  background-size: 20px; /* Adjust the size of the logo */
+  background-position: 10px center; /* Adjust the position of the logo */
+  background-repeat: no-repeat;
+  padding-left: 40px; /* Adjust the padding to make space for the logo */
+  box-sizing: border-box; /* Include padding in the total width */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-left: 360px;
+}
+
+.search-bar-section:hover,
+.search-bar-section:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  
+}
+
+/* Optional: Customize the placeholder style */
+.search-bar-section::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.ham-logo {
+  height: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  transition: transform 0.3s ease; /* Smooth transition for the scale effect */
+}
+
+.ham-logo:hover {
+  transform: scale(1.2); /* Scale up on hover (you can adjust the scale factor) */
+  /* Add additional hover effects or animations as needed */
 }
 

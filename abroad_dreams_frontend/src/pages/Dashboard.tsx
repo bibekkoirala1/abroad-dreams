@@ -6,39 +6,32 @@ function Dashboard() {
 
 return(
 
-  <div
-   className="container">
-    <div
-     className="dashboard-header">
-      <h1>Dashboard header</h1>
+  <div className="header">
+
+    <div className="left-section">
+    <img className="dream-logo" src="src/assets/logo/ad-square-logo.svg"/>
+      <img className="ham-logo" src="src/assets/home-slideshow/Hamburger_icon.png" alt="" />
+      <div className="left-container">
+      </div>
     </div>
-    <div
-     className="dashboard-main">
+    <div className="middle-section">
+      <input className="search-bar-section" placeholder="Search  for" type="text" /></div>
+    <div className="right-section">
 
-      <div className="side-bar">
-        <p>left</p>
-        <p>left</p>
-        <p>left</p>
-        <p>left</p>
-        <p>left</p>
-        <p>left</p>
-        <p>left</p>
-        <p>left</p>
-        <p>left</p>
-      </div>
+    <img className="notification-logo" src="src/assets/home-slideshow/notification-icon.png" alt="no img" />
 
-      <div className="main-body">
-        <p>right</p>
-      </div>
+    <img className="profile-image" src="src/assets/home-slideshow/profile.jpg" alt="no img" />
 
-      <h1>Main body</h1>
+    <div className="admin-info">
+      <h3>Karan Bohara</h3>
+    </div>
 
-      </div>
-       <div className="dashboard-footer">
-      <h1>Dashboard Footer</h1>
+
+    
     </div>
   </div>
- 
+
+
 
 )
 };
