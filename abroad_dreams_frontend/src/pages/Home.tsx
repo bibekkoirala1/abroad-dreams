@@ -43,6 +43,22 @@ function Home(){
 
             </div>
 
+            <div className="main-body">
+            <div className="slider-frame">
+            <div className="slide-images">
+                    <div className="img-container">
+                        <img src="src/assets/home-slideshow/slideshow-1.jpg"/>
+                    </div>
+                    <div className="img-container">
+                    <img src="src/assets/home-slideshow/slideshow-2.jpg"/>
+                    </div>
+                    <div className="img-container">
+                    <img src="src/assets/home-slideshow/slideshow-3.jpg"/>
+                    </div>
+            </div>
+        </div>
+            </div>
+
 
 
             <div className="footer">
