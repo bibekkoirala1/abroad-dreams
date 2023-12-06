@@ -9,9 +9,18 @@ return(
   <div className="header">
 
     <div className="left-section">
-    <img className="dream-logo" src="src/assets/logo/ad-square-logo.svg"/>
+      <img className="dream-logo" src="src\assets\logo\ad-logo-dashboard.svg"/>
+      <div className="dashboard-button-container">
+        <button className="dashboard-button" >Users</button>
+        <button className="dashboard-button" >Institutions</button>
+        <button className="dashboard-button" >Courses</button>
+        <button className="dashboard-button" >Teachers</button>
+        <button className="dashboard-button" >Classrooms</button>
+        <button className="dashboard-button" >Payments</button>
+      </div>
       <img className="ham-logo" src="src/assets/home-slideshow/Hamburger_icon.png" alt="" />
       <div className="left-container">
+        
       </div>
     </div>
     <div className="middle-section">
