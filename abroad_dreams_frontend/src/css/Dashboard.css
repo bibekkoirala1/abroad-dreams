@@ -118,7 +118,7 @@ body {
   padding: 8px 16px;
   font-size: 14px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background-image: url('path/to/your-logo.png'); /* Replace 'path/to/your-logo.png' with the actual path to your logo */
+  background-image: url('src/assets/home-slideshow/search-bar.png'); /* Replace 'path/to/your-logo.png' with the actual path to your logo */
   background-size: 20px; /* Adjust the size of the logo */
   background-position: 10px center; /* Adjust the position of the logo */
   background-repeat: no-repeat;
