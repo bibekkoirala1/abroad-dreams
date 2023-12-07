@@ -1,3 +1,10 @@
+/* Header */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -14,7 +21,9 @@
 }
 
 .logo {
-    width: 15%;
+    margin-left: 60px;
+    margin-top:60px;
+    width: 13%;
 }
 
 .logo img {
@@ -25,6 +34,7 @@
 
 .links {
     width: 25%;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -40,6 +50,7 @@
 }
 
 .login-register {
+    margin-top: 60px;
     width: 45%;
     display: flex;
     justify-content: space-between;
@@ -77,8 +88,8 @@
 }
 
 .btn-register:hover {
-    background-color: green;
-    border: 2px solid green;
+    background-color: #82b041;
+    border: 2px solid #82b041;
     color: white;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -88,18 +99,17 @@
     margin-left: -20px;
 }
 
-/* Main Body */
 
 .slider-frame {
-    overflow: hidden;
-    height: 800px;
-    width: 1200px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    /*overflow: hidden;*/
+    height: 5px;
+    width: 1200px; /* Adjusted to full viewport width */
+    margin-top: 70px; /* Adjusted margin-top to align with the header */
+    margin-bottom: 0; /* Removed margin-bottom */
     position: relative;
 }
 
-/*---------- SLIDE ANIMATION --------------*/
+/* Slide Animation */
 
 @keyframes slide_animation {
     0% {left: 0;}
@@ -108,7 +118,7 @@
     45% {left: -1200px;}
     50% {left: -2400px;}
     70% {left: -2400px;}
-    75% {left: -1200px;}
+    75% {left: -2400px;}
     95% {left: -1200px;}
     100% {left: 0;}
 }
@@ -126,19 +136,18 @@
 }
 
 .slide-images {
-    width: 3800px;
-    height: 800px;
+    width: 100%;
+    height: 400px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2000px;
     display: flex;
     animation: slide_animation 33s infinite alternate;
 }
 
 .img-container {
-    height: 800px;
-    width: 1200px;
-    flex-shrink: 0;
+    height: 600px;
+    width: 1600px;
+    flex-shrink: 1;
     position: relative;
 }
 
@@ -148,19 +157,38 @@
     object-fit: cover;
 }
 
-/* Course Finder */
-.course-finder {
-    position: relative;
+/* Main Body */
+
+.main-body{
+    display: flex;
     width: 100%;
+    flex-direction: column;
 }
 
+/* Course Finder */
+
+.course-finder-wrapper {
+    top: -1900px;
+    left: 50%;
+    position: relative;
+    max-width:1600px;
+    width: 100vw;
+    height: 100vh;
+    /*background: url('src/assets/home-slideshow/slideshow-1.jpg') center center/cover no-repeat;*/
+}
+
+.course-finder {
+
+
+
+}
 
 .search-container {
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    max-width: 800px;
+    max-width: 1000px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
@@ -172,7 +200,7 @@
 .search-container select,
 .search-container button {
     display: block;
-    width: 100%;
+    width: calc(100% - 20px); /* Adjusted width for the input fields */
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -181,8 +209,8 @@
 }
 
 
-/* Footer */
 
+/* Footer */
 
 .footer {
     background-color: green;
